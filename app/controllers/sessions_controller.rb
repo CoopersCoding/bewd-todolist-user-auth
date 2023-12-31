@@ -14,6 +14,7 @@ class SessionsController < ApplicationController
       render json: {
         success: false
       }
+    end
   end
 
   def authenticated
@@ -29,6 +30,7 @@ class SessionsController < ApplicationController
       render json: {
         authenticated: false
       }
+    end
   end
 
   def destroy
@@ -38,6 +40,6 @@ class SessionsController < ApplicationController
       render json: {
         success: true
       }
+    end
   end
-end
 end
